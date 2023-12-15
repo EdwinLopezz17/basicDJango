@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +12,13 @@
     <ul>
         {% for category in categories %}
             {% if category == 'sales'%}
-                <li><b>{{category}}</b></li>
+                <li><b>{{category|upper}}</b></li>
             {%else%}
                 <li>{{category}}</li>
             {%endif%}
         {% endfor%}
+
+        <h5>Total de categorias: {{categories|length}}</h5>
     </ul>
 </body>
 </html>

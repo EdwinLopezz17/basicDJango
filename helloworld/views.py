@@ -22,3 +22,7 @@ def dinamic(request, name):
     categories = ['code', 'design', 'marketing', 'sales']
     context = {'name': name, 'categories':categories}
     return render(request, 'dinamic.html', context)
+
+
+def statics(request):
+    return render(request, 'statics.html', {})
