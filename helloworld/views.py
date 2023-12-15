@@ -18,3 +18,7 @@ def adult(request, age):
     
     return HttpResponse("You are not of age")
 
+def dinamic(request, name):
+    categories = ['code', 'design', 'marketing', 'sales']
+    context = {'name': name, 'categories':categories}
+    return render(request, 'dinamic.html', context)

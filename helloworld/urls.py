@@ -24,5 +24,6 @@ urlpatterns = [
     path('greet/', views.greet, name="greet"),
     path('farewell/', views.farewell, name="farewell"),
     path('adult/<int:age>/', views.adult, name="adult"),
+    path('dinamic/<str:name>/', views.dinamic, name="dinamic"),
 
 ]
