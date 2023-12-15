@@ -26,3 +26,16 @@ def dinamic(request, name):
 
 def statics(request):
     return render(request, 'statics.html', {})
+
+def herencia(request):
+    return render(request, 'herencia.html', {})
+
+def example(request):
+    return render(request, 'example.html',{})
+
+def other(request):
+    return render(request, 'other.html',{})
+
+
+
+
