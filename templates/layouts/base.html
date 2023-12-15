@@ -12,22 +12,13 @@
 </head>
 <body>
 
-    <nav>
-        <h4>Logo</h3>
-        <ul>
-            <li><a href="#">Herencia</a></li>
-            <li><a href="#">Example</a></li>
-            <li><a href="#">Other</a></li>
-        </ul>
-    </nav>
+    {% include  'layouts/partials/menu.html' %}
 
     <main> 
         {% block content %}{% endblock %}
     </main>
 
-    <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </footer>
+    {% include  'layouts/partials/footer.html' %}
 
     {% block scripts %}{% endblock %}
 
